@@ -1,5 +1,7 @@
 # Text Adventure API (TAA)
 
+THIS IS NOT READY TO USE BUT WILL BE UPDATED IN THE FUTURE
+
 ## Overview
 
 This API provides the fundamental building blocks for creating a text-based adventure game. It allows you to define locations, present choices to the player, and navigate between different locations based on player input. The API also includes utilities for printing text in the console, including colored text.
