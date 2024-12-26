@@ -1,4 +1,4 @@
-# Text Adventure API
+# Text Adventure API - TAA
 
 ## Overview
 
@@ -16,7 +16,7 @@ This API provides the fundamental building blocks for creating a text-based adve
 
 ## Classes
 
-### `TAE::Location`
+### `TAA::Location`
 
 This class is used to represent a location in the text adventure. Each location has a name, description, and a set of choices that the player can make to navigate to other locations.
 
@@ -43,7 +43,7 @@ forest.AddChoice("Go South", "River", "You head south and reach a flowing river.
 forest.Display();
 ```
 
-### `TAE::Game`
+### `TAA::Game`
 
 The `Game` class is used to control the game loop and handle player input. It initializes the game, displays the welcome message, and processes player decisions.
 
@@ -73,7 +73,7 @@ myGame.Run();
 
 ## Functions
 
-### `TAE::TEXT`
+### `TAA::TEXT`
 
 ```cpp
 void TEXT(std::string text);
@@ -87,7 +87,7 @@ void TEXT(std::string text);
 TEXT("Hello, welcome to the game!");
 ```
 
-### `TAE::INPUT`
+### `TAA::INPUT`
 
 ```cpp
 void INPUT(std::string& inputText);
