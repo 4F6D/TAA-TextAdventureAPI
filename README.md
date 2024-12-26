@@ -106,10 +106,10 @@ INPUT(playerChoice);
 
 The following functions allow printing colored text in the console:
 
-- `TAE::RED_TEXT(std::string text)`: Returns the text wrapped in red color.
-- `TAE::BLUE_TEXT(std::string text)`: Returns the text wrapped in blue color.
-- `TAE::GREEN_TEXT(std::string text)`: Returns the text wrapped in green color.
-- `TAE::YELLOW_TEXT(std::string text)`: Returns the text wrapped in yellow color.
+- `TAA::RED_TEXT(std::string text)`: Returns the text wrapped in red color.
+- `TAA::BLUE_TEXT(std::string text)`: Returns the text wrapped in blue color.
+- `TAA::GREEN_TEXT(std::string text)`: Returns the text wrapped in green color.
+- `TAA::YELLOW_TEXT(std::string text)`: Returns the text wrapped in yellow color.
 
 #### Example
 
