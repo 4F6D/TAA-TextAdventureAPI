@@ -1,6 +1,7 @@
 # Text Adventure API (TAA)
 
 THIS IS NOT READY TO USE BUT WILL BE UPDATED IN THE FUTURE
+Everything is in one file for ease of use. Might change in the future
 
 ## Overview
 
