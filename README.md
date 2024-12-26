@@ -1,4 +1,4 @@
-# Text Adventure API - TAA
+# Text Adventure API (TAA)
 
 ## Overview
 
@@ -117,6 +117,41 @@ The following functions allow printing colored text in the console:
 TEXT(RED_TEXT("This is a red message!"));
 TEXT(GREEN_TEXT("This is a green message!"));
 ```
+
+---
+
+## Example Usage
+
+Here is an example of how you can use the TAA API to create a simple text adventure game:
+
+```cpp
+#include "TAA.h"
+
+int main() {
+    // Create locations
+    TAA::Location forest("Forest", "You are standing in a dark, dense forest.");
+    TAA::Location mountain("Mountain", "You are at the base of a snow-capped mountain.");
+    TAA::Location river("River", "You stand beside a flowing river.");
+
+    // Add choices to each location
+    forest.AddChoice("Go North", "Mountain", "You walk north and find yourself at the foot of a mountain.");
+    forest.AddChoice("Go South", "River", "You head south and reach a flowing river.");
+
+    mountain.AddChoice("Go South", "Forest", "You walk back to the forest.");
+    river.AddChoice("Go North", "Forest", "You walk back to the forest.");
+
+    // Initialize the game
+    TAA::Game myGame("Epic Adventure", "Welcome to the adventure!");
+    myGame.Init();
+
+    // Start the game loop
+    myGame.Run();
+
+    return 0;
+}
+```
+
+In this example, we create three locations (`forest`, `mountain`, `river`), each with a name and description. The player can choose between options that lead to other locations. The game runs until the player decides to quit.
 
 ---
 
